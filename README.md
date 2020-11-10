@@ -1,6 +1,6 @@
 # cloudlab_1
 
-## Budowanie i uruchamianie kontenera
+## Zarzadzanie kontenerem
 
 ### Automatycznie
 
