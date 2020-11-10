@@ -10,6 +10,8 @@ Sklonuj repozytorium i wykonaj pliki `build.sh` i `first_run.sh` w tej kolejnoś
 
 ### Ręcznie
 
+#### Z użyciem repozytorium GitHub
+
 Żeby zbudować kontener bezpośrednio z repozytorium (bez klonowania), wystarczy do `docker build` przekazać URL repozytorium (i opcjonalnie nazwę)
 
 ```sh
@@ -40,3 +42,13 @@ docker stop cloudlab_app_1
 docker container rm cloudlab_app_1
 docker image rm cloudlab_img_1
 ```
+
+#### Z użyciem Docker Huba
+
+Żeby wykorzystać gotowy obraz z Docker Huba, należy pominąć budowanie i uruchomić kontener podając nazwę repozytorium w poleceniu
+
+```sh
+docker run -d --name cloudlab_app_1 -p 8080:80 steelph0enix/cloudlab_1
+```
+
+Pozostałe polecenia (start/stop i czyszczenie) są takie same.
