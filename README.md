@@ -25,13 +25,13 @@ docker run -d --name cloudlab_app_1 -p 8080:80 cloudlab_img_1
 Każde kolejne uruchomienie należy wykonywać z użyciem `docker start`
 
 ```sh
-docker start cloudlab_img_1
+docker start cloudlab_app_1
 ```
 
 Żeby zatrzymać aplikację, należy użyć `docker stop`
 
 ```sh
-docker stop cloudlab_img_1
+docker stop cloudlab_app_1
 ```
 
 Żeby usunąć kontener i obraz, trzeba zatrzymać aplikację i użyć następujących poleceń
